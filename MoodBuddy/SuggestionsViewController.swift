@@ -22,8 +22,8 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
     var front: UIImageView!
     var back2: UIImageView!
     var front2: UIImageView!
-    var showingBack1 = true
-    var showingBack2 = true
+    var showingFront1 = true
+    var showingFront2 = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +34,9 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
         tap1.numberOfTapsRequired = 1
         
         var frame = scrollView.bounds
-        front = UIImageView(image: UIImage(named: "photo1.png"))
+        front = UIImageView(image: UIImage(named: "photo1.jpg"))
         front.frame = frame
-        back = UIImageView(image: UIImage(named: "photo2.png"))
+        back = UIImageView(image: UIImage(named: "photo2.jpg"))
         back.frame = frame
         cardView = UIView()
         cardView.addGestureRecognizer(tap1)
@@ -46,8 +46,8 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
         
         let tap2 = UITapGestureRecognizer(target: self, action: Selector("tapped2"))
         tap2.numberOfTapsRequired = 1
-        front2 = UIImageView(image: UIImage(named: "photo3.png"))
-        back2 = UIImageView(image: UIImage(named: "photo4.png"))
+        front2 = UIImageView(image: UIImage(named: "photo3.jpg"))
+        back2 = UIImageView(image: UIImage(named: "photo4.jpg"))
         front2.frame = frame
         back2.frame = frame
         cardView2 = UIView()
@@ -73,40 +73,74 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    //this part is copied, try to edit.
+    //Button Functions
     
     func tapped1() {
-        if (showingBack1) {
+        if (showingFront1) {
             UIView.transitionFromView(back, toView: front, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
-            showingBack1 = false
+            showingFront1 = false
             let w = self.cardView.frame.size.width
             let h = self.cardView.frame.size.height
+            
             let button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            button.frame = CGRectMake(0.2*w, 0.7*h, 0.2*w, 0.1*h)
-            button.backgroundColor = UIColor.greenColor()
-            button.setTitle("Phone", forState: UIControlState.Normal)
+            let text = UIImage(named: "text.png") as UIImage!
+            button.frame = CGRectMake(0.2*w, 0.7*h, 0.2*w, 0.2*w)
+            button.setImage(text, forState: .Normal)
+            button.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
+            button.addTarget(self, action: "textpressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            
             let button2   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            button2.frame = CGRectMake(0.6*w, 0.7*h, 0.2*w, 0.1*h)
-            button2.backgroundColor = UIColor.blueColor()
-            button2.setTitle("Calendar", forState: UIControlState.Normal)
-            //button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+            let calendar = UIImage(named: "calendar.png") as UIImage!
+            button2.frame = CGRectMake(0.6*w, 0.7*h, 0.2*w, 0.2*w)
+            button2.setImage(calendar, forState: .Normal)
+            button2.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
+            button2.addTarget(self, action: "calendarpressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            
             cardView.addSubview(button)
             cardView.addSubview(button2)
         } else {
             UIView.transitionFromView(front, toView: back, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-            showingBack1 = true
+            for view in self.cardView.subviews {
+                view.removeFromSuperview()
+            }
+            cardView.addSubview(front)
+            cardView.addSubview(back)
+            showingFront1 = true
         }
     }
     
     func tapped2() {
-        if (showingBack2) {
+        if (showingFront2) {
             UIView.transitionFromView(back2, toView: front2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
-            showingBack2 = false
+            showingFront2 = false
         } else {
             UIView.transitionFromView(front2, toView: back2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-            showingBack2 = true
+            showingFront2 = true
         }
     }
+    
+    
+    func textpressed(sender:UIButton!)
+    {
+        let alert = UIAlertView()
+        alert.title = "Do you want to send a Message?"
+        alert.message = "You will be redirected to iMessage"
+        alert.addButtonWithTitle("Yes")
+        alert.addButtonWithTitle("No")
+        alert.show()
+    }
+    
+    func calendarpressed(sender:UIButton!)
+    {
+        let alert = UIAlertView()
+        alert.title = "Do you want to add this to your calendar?"
+        alert.message = "You will be redirected to iCal"
+        alert.addButtonWithTitle("Yes")
+        alert.addButtonWithTitle("No")
+        alert.show()
+    }
+    
+    
     
     
     func loadPage(page: Int) {
@@ -184,13 +218,11 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView!) {
         // Load the pages that are now on screen
         loadVisiblePages()
-        if !showingBack1{
-            cardView.transitionFromView(front, toView: back, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-            showingBack1 = true
+        if !showingFront1{
+            tapped1()
         }
-        if !showingBack2{
-            cardView2.transitionFromView(front2, toView: back2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
-            showingBack1 = true
+        if !showingFront2{
+            tapped2()
         }
         
     }
