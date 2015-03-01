@@ -48,10 +48,10 @@
 		93C7B0591AA2E3CC00498F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C7B05A1AA2E3CC00498F97 /* MoodBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodBuddyTests.swift; sourceTree = "<group>"; };
 		93C7B0641AA2E5F900498F97 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
-		93C7B0661AA2E61B00498F97 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../../ScrollViews/eecs330proj/ScrollViews/SettingsViewController.swift; sourceTree = "<group>"; };
-		93C7B0671AA2E61B00498F97 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckInViewController.swift; path = ../../ScrollViews/eecs330proj/ScrollViews/CheckInViewController.swift; sourceTree = "<group>"; };
-		93C7B0681AA2E61B00498F97 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphViewController.swift; path = ../../ScrollViews/eecs330proj/ScrollViews/GraphViewController.swift; sourceTree = "<group>"; };
-		93C7B06C1AA2EA0300498F97 /* ScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewContainer.swift; path = ../../ScrollViews/eecs330proj/ScrollViews/ScrollViewContainer.swift; sourceTree = "<group>"; };
+		93C7B0661AA2E61B00498F97 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		93C7B0671AA2E61B00498F97 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		93C7B0681AA2E61B00498F97 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		93C7B06C1AA2EA0300498F97 /* ScrollViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewContainer.swift; sourceTree = "<group>"; };
 		93C7B07A1AA301E800498F97 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		93C7B07B1AA301E800498F97 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		93C7B07C1AA301E800498F97 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
