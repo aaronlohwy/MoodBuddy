@@ -151,6 +151,11 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
             cardView2.addSubview(button3)
         } else {
             UIView.transitionFromView(front2, toView: back2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
+            for view in self.cardView2.subviews {
+                view.removeFromSuperview()
+            }
+            cardView2.addSubview(front2)
+            cardView2.addSubview(back2)
             showingFront2 = true
         }
     }
