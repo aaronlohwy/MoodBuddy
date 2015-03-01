@@ -6,9 +6,10 @@
 //  Copyright (c) 2015 Skyrocket Software. All rights reserved.
 //
 
+
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UITableViewController {
     
     
     

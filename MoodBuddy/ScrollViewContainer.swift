@@ -2,7 +2,7 @@
 //  ScrollViewContainer.swift
 //  ScrollViews
 //
-//
+// sample code adapted from http://www.raywenderlich.com/76436/use-uiscrollview-scroll-zoom-content-swift
 
 import UIKit
 
