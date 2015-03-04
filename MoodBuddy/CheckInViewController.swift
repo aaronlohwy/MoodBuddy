@@ -10,9 +10,11 @@ import UIKit
 class CheckInViewController: UIViewController {
  
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var bottomConstraint2: NSLayoutConstraint!
 
+    @IBOutlet weak var bottomConstraint2: NSLayoutConstraint!
+    
+    @IBOutlet weak var bottomConstraint3: NSLayoutConstraint!
+    
     @IBOutlet weak var reply: UITextView!
     
     @IBOutlet weak var textField: UITextField!
@@ -54,8 +56,9 @@ class CheckInViewController: UIViewController {
         var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
         
         UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.bottomConstraint.constant = keyboardFrame.size.height - 20
-            self.bottomConstraint2.constant = keyboardFrame.size.height - 20
+            self.bottomConstraint.constant = keyboardFrame.size.height - 40
+            self.bottomConstraint2.constant = keyboardFrame.size.height - 40
+            self.bottomConstraint3.constant = -1*keyboardFrame.size.height + 50
         })
     }
     
@@ -63,8 +66,9 @@ class CheckInViewController: UIViewController {
         var info = notification.userInfo!
         
         UIView.animateWithDuration(0.1, animations: { () -> Void in
-            self.bottomConstraint.constant =  20
-            self.bottomConstraint2.constant =  20
+            self.bottomConstraint.constant =  8
+            self.bottomConstraint2.constant =  8
+            self.bottomConstraint3.constant = 0
         })
     }
 

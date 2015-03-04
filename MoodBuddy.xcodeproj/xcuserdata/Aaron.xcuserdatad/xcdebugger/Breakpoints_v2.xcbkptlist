@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MoodBuddy/SuggestionsViewController.swift"
-            timestampString = "446945996.968701"
+            timestampString = "447145039.992717"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "removeCardView()"
             landmarkType = "5">
          </BreakpointContent>

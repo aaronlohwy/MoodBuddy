@@ -34,15 +34,15 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
         tap1.numberOfTapsRequired = 1
         
         var frame = scrollView.bounds
-        front = UIImageView(image: UIImage(named: "photo1.jpg"))
+        front = UIImageView(image: UIImage(named: "suggestion1.png"))
         front.frame = frame
-        back = UIImageView(image: UIImage(named: "photo2.jpg"))
+        back = UIImageView(image: UIImage(named: "suggestions1back.png"))
         back.frame = frame
         cardView = UIView()
         cardView.addGestureRecognizer(tap1)
         cardView.userInteractionEnabled = true
-        cardView.addSubview(front)
         cardView.addSubview(back)
+        cardView.addSubview(front)
         
         let tap2 = UITapGestureRecognizer(target: self, action: Selector("tapped2"))
         tap2.numberOfTapsRequired = 1
@@ -54,6 +54,7 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
         cardView2.addGestureRecognizer(tap2)
         cardView2.userInteractionEnabled = true
         cardView2.addSubview(back2)
+        cardView2.addSubview(front2)
         
         pageViews = [cardView,cardView2]
         
@@ -77,85 +78,117 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
     
     func tapped1() {
         if (showingFront1) {
-            UIView.transitionFromView(back, toView: front, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
+            UIView.transitionFromView(front, toView: back, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
             showingFront1 = false
             let w = self.cardView.frame.size.width
             let h = self.cardView.frame.size.height
             
             let button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            let text = UIImage(named: "text.png") as UIImage!
-            button.frame = CGRectMake(0.2*w, 0.7*h, 0.2*w, 0.2*w)
+            let text = UIImage(named: "Speech Bubble.png") as UIImage!
+            button.frame = CGRectMake(0.25*w, 0.6*h, 0.15*w, 0.15*w)
             button.setImage(text, forState: .Normal)
             button.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
             button.addTarget(self, action: "textpressed:", forControlEvents: UIControlEvents.TouchUpInside)
             
+            
             let button2   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            let calendar = UIImage(named: "calendar.png") as UIImage!
-            button2.frame = CGRectMake(0.6*w, 0.7*h, 0.2*w, 0.2*w)
+            let calendar = UIImage(named: "Calendar.png") as UIImage!
+            button2.frame = CGRectMake(0.45*w, 0.6*h, 0.15*w, 0.15*w)
             button2.setImage(calendar, forState: .Normal)
             button2.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
             button2.addTarget(self, action: "calendarpressed:", forControlEvents: UIControlEvents.TouchUpInside)
             
+            
             let button3   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            let delete = UIImage(named: "cross.png") as UIImage!
-            button3.frame = CGRectMake(0.8*w, 0.05*h, 0.1*w, 0.1*w)
-            button3.setImage(delete, forState: .Normal)
+            let map = UIImage(named: "Map Marker.png") as UIImage!
+            button3.frame = CGRectMake(0.65*w, 0.6*h, 0.15*w, 0.15*w)
+            button3.setImage(map, forState: .Normal)
             button3.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
-            button3.addTarget(self, action: "deletepressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            button3.addTarget(self, action: "mappressed:", forControlEvents: UIControlEvents.TouchUpInside)
             
             cardView.addSubview(button)
             cardView.addSubview(button2)
             cardView.addSubview(button3)
+
         } else {
-            UIView.transitionFromView(front, toView: back, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
+            UIView.transitionFromView(back, toView: front, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
             for view in self.cardView.subviews {
                 view.removeFromSuperview()
             }
-            cardView.addSubview(front)
             cardView.addSubview(back)
+            cardView.addSubview(front)
+            
+            let w = self.cardView.frame.size.width
+            let h = self.cardView.frame.size.height
+            
+            let button4   = UIButton.buttonWithType(UIButtonType.System) as UIButton
+            let delete = UIImage(named: "cross.png") as UIImage!
+            button4.frame = CGRectMake(0.85*w, 0.05*h, 0.05*w, 0.05*w)
+            button4.setImage(delete, forState: .Normal)
+            button4.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
+            button4.addTarget(self, action: "deletepressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            
+            cardView.addSubview(button4)
+            
             showingFront1 = true
         }
     }
     
     func tapped2() {
         if (showingFront2) {
-            UIView.transitionFromView(back2, toView: front2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
+            UIView.transitionFromView(front2, toView: back2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
             showingFront2 = false
             
-            let w = self.cardView.frame.size.width
-            let h = self.cardView.frame.size.height
+            let w = self.cardView2.frame.size.width
+            let h = self.cardView2.frame.size.height
             
             let button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            let text = UIImage(named: "text.png") as UIImage!
-            button.frame = CGRectMake(0.2*w, 0.7*h, 0.2*w, 0.2*w)
+            let text = UIImage(named: "Speech Bubble.png") as UIImage!
+            button.frame = CGRectMake(0.25*w, 0.6*h, 0.15*w, 0.15*w)
             button.setImage(text, forState: .Normal)
             button.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
             button.addTarget(self, action: "textpressed:", forControlEvents: UIControlEvents.TouchUpInside)
             
+            
             let button2   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            let calendar = UIImage(named: "calendar.png") as UIImage!
-            button2.frame = CGRectMake(0.6*w, 0.7*h, 0.2*w, 0.2*w)
+            let calendar = UIImage(named: "Calendar.png") as UIImage!
+            button2.frame = CGRectMake(0.45*w, 0.6*h, 0.15*w, 0.15*w)
             button2.setImage(calendar, forState: .Normal)
             button2.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
             button2.addTarget(self, action: "calendarpressed:", forControlEvents: UIControlEvents.TouchUpInside)
             
+            
             let button3   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-            let delete = UIImage(named: "cross.png") as UIImage!
-            button3.frame = CGRectMake(0.8*w, 0.05*h, 0.1*w, 0.1*w)
-            button3.setImage(delete, forState: .Normal)
+            let map = UIImage(named: "Map Marker.png") as UIImage!
+            button3.frame = CGRectMake(0.65*w, 0.6*h, 0.15*w, 0.15*w)
+            button3.setImage(map, forState: .Normal)
             button3.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
-            button3.addTarget(self, action: "deletepressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            button3.addTarget(self, action: "mappressed:", forControlEvents: UIControlEvents.TouchUpInside)
             
             cardView2.addSubview(button)
             cardView2.addSubview(button2)
             cardView2.addSubview(button3)
         } else {
-            UIView.transitionFromView(front2, toView: back2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
+            UIView.transitionFromView(back2, toView: front2, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
             for view in self.cardView2.subviews {
                 view.removeFromSuperview()
             }
-            cardView2.addSubview(front2)
             cardView2.addSubview(back2)
+            cardView2.addSubview(front2)
+            
+            
+            let w = cardView2.frame.size.width
+            let h = cardView2.frame.size.height
+            
+            let button4   = UIButton.buttonWithType(UIButtonType.System) as UIButton
+            let delete = UIImage(named: "cross.png") as UIImage!
+            button4.frame = CGRectMake(0.85*w, 0.05*h, 0.05*w, 0.05*w)
+            button4.setImage(delete, forState: .Normal)
+            button4.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
+            button4.addTarget(self, action: "deletepressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            
+            cardView2.addSubview(button4)
+
             showingFront2 = true
         }
     }
@@ -177,6 +210,16 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
         let alert = UIAlertView()
         alert.title = "Do you want to add this to your calendar?"
         alert.message = "You will be redirected to iCal"
+        alert.addButtonWithTitle("Yes")
+        alert.addButtonWithTitle("No")
+        alert.show()
+    }
+    
+    func mappressed(sender:UIButton!)
+    {
+        let alert = UIAlertView()
+        alert.title = "Do you want to look for a place?"
+        alert.message = "You will be redirected to Maps"
         alert.addButtonWithTitle("Yes")
         alert.addButtonWithTitle("No")
         alert.show()
@@ -228,6 +271,19 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
             newPageView!.frame = frame
             newPageView!.clipsToBounds = true
             newPageView!.autoresizesSubviews = true
+            
+            let w =  newPageView!.frame.size.width
+            let h =  newPageView!.frame.size.height
+            
+            let button4   = UIButton.buttonWithType(UIButtonType.System) as UIButton
+            let delete = UIImage(named: "cross.png") as UIImage!
+            button4.frame = CGRectMake(0.85*w, 0.05*h, 0.05*w, 0.05*w)
+            button4.setImage(delete, forState: .Normal)
+            button4.imageView!.contentMode = UIViewContentMode.ScaleAspectFit;
+            button4.addTarget(self, action: "deletepressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            
+            newPageView!.addSubview(button4)
+            
             scrollView.addSubview(newPageView!) //INSTEAD OF ADDING A UI IMAGE VIEW, ADD A UIVIEW WITH EMBEDDED UIIMAGEVIEWS
             //collectionPageViews[page] = newPageView
         }
