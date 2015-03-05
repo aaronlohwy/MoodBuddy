@@ -36,6 +36,8 @@ class GraphViewController: UIViewController, UIScrollViewDelegate {
         let scaleWidth = scrollViewFrame.size.width / GraphScrollView.contentSize.width
         let scaleHeight = scrollViewFrame.size.height / GraphScrollView.contentSize.height
         let minScale = min(scaleWidth, scaleHeight);
+        
+        //play around with this to get the scale right:
         GraphScrollView.minimumZoomScale = scaleHeight+0.165
         GraphScrollView.maximumZoomScale = 1
         

@@ -179,7 +179,7 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
     func textpressed(sender:UIButton!)
     {
         let alert = UIAlertView()
-        alert.title = "Do you want to send a Message?"
+        alert.title = "Do you want to send a message?"
         alert.message = "You will be redirected to iMessage"
         alert.addButtonWithTitle("Yes")
         alert.addButtonWithTitle("No")
@@ -239,7 +239,7 @@ class SuggestionsViewController: UIViewController, UIScrollViewDelegate {
     func deletepressed(sender:UIButton!)
     {
         let alert = UIAlertView()
-        alert.title = "Do you want to delete this Suggestion?"
+        alert.title = "Do you want to delete this suggestion?"
         alert.message = "This suggestion will not appear again"
         alert.addButtonWithTitle("Yes")
         alert.addButtonWithTitle("No")
