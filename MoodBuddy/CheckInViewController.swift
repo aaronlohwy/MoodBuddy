@@ -9,39 +9,23 @@ import UIKit
 
 class CheckInViewController: UIViewController {
  
+    //constraints for when keyboard comes up
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-
     @IBOutlet weak var bottomConstraint2: NSLayoutConstraint!
-    
     @IBOutlet weak var bottomConstraint3: NSLayoutConstraint!
     
-    @IBOutlet weak var reply: UITextView!
-    
+    @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var appreply: UITextView!
-    
-    @IBOutlet weak var YesButton: UIButton!
-    
-    @IBOutlet weak var NoButton: UIButton!
-    
     @IBAction func sendButton(sender: UIButton) {
-        let text = textField.text
-        reply.text = text
-        
-        reply.sizeToFit()
-        reply.layoutIfNeeded()
-        let height = reply.sizeThatFits(CGSizeMake(reply.frame.size.width, CGFloat.max)).height
-        reply.contentSize.height = height
-        reply.backgroundColor = UIColor.blueColor()
         textField.text=""
-        appreply.text = "Sounds like you had a good lunch with Sarah today, and that you managed to get a lot of work done. Does that sound about right?"
-        YesButton.setTitle("Yes",forState: UIControlState.Normal)
-        NoButton.setTitle("No",forState: UIControlState.Normal)
+        //change image to reflect new text
+        backgroundImg.image = UIImage(named:"checkinafter.png")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //detect if keyboard is shown
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWasShown:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
     }
@@ -51,6 +35,7 @@ class CheckInViewController: UIViewController {
     }
     
     
+    //shifting the text bar up to fit keyboard
     func keyboardWasShown(notification: NSNotification) {
         var info = notification.userInfo!
         var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
@@ -62,6 +47,7 @@ class CheckInViewController: UIViewController {
         })
     }
     
+    //shifting text bar down to fit screen
     func keyboardWillHide(notification: NSNotification) {
         var info = notification.userInfo!
         
