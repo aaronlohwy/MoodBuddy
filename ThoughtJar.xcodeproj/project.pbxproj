@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		937347E61AA6E723009704C0 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 937347E51AA6E723009704C0 /* splash.jpg */; };
+		935280C81AA9027A00645457 /* splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 935280C71AA9027A00645457 /* splash@2x.png */; };
+		935280CA1AA9074D00645457 /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 935280C91AA9074D00645457 /* AppIcon@2x.png */; };
 		939E82F31AA6B42C00B0B846 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = 939E82E91AA6B42C00B0B846 /* call.png */; };
 		939E82F41AA6B42C00B0B846 /* checkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 939E82EA1AA6B42C00B0B846 /* checkin.png */; };
 		939E82F51AA6B42C00B0B846 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 939E82EB1AA6B42C00B0B846 /* cross.png */; };
@@ -52,7 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		937347E51AA6E723009704C0 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = splash.jpg; path = "Image Assets/splash.jpg"; sourceTree = "<group>"; };
+		935280C71AA9027A00645457 /* splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash@2x.png"; path = "Image Assets/splash@2x.png"; sourceTree = "<group>"; };
+		935280C91AA9074D00645457 /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon@2x.png"; path = "Image Assets/AppIcon@2x.png"; sourceTree = "<group>"; };
 		939E82E91AA6B42C00B0B846 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = call.png; path = "Image Assets/call.png"; sourceTree = "<group>"; };
 		939E82EA1AA6B42C00B0B846 /* checkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkin.png; path = "Image Assets/checkin.png"; sourceTree = "<group>"; };
 		939E82EB1AA6B42C00B0B846 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = "Image Assets/cross.png"; sourceTree = "<group>"; };
@@ -67,13 +69,13 @@
 		939E83201AA6DBB000B0B846 /* Speech Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speech Bubble.png"; path = "Image Assets/Speech Bubble.png"; sourceTree = "<group>"; };
 		939E83221AA6DBDB00B0B846 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calendar.png; path = "Image Assets/Calendar.png"; sourceTree = "<group>"; };
 		93A043461AA81BB1004A4BB8 /* TrackingBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrackingBG.png; path = "Image Assets/TrackingBG.png"; sourceTree = "<group>"; };
-		93C7B03F1AA2E3CC00498F97 /* MoodBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C7B03F1AA2E3CC00498F97 /* ThoughtJar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtJar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C7B0431AA2E3CC00498F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C7B0441AA2E3CC00498F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C7B0491AA2E3CC00498F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93C7B04B1AA2E3CC00498F97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93C7B04E1AA2E3CC00498F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		93C7B0541AA2E3CC00498F97 /* MoodBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C7B0541AA2E3CC00498F97 /* ThoughtJarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughtJarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C7B0591AA2E3CC00498F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C7B05A1AA2E3CC00498F97 /* MoodBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodBuddyTests.swift; sourceTree = "<group>"; };
 		93C7B0641AA2E5F900498F97 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
@@ -111,8 +113,8 @@
 		93C7B0361AA2E3CC00498F97 = {
 			isa = PBXGroup;
 			children = (
-				93C7B0411AA2E3CC00498F97 /* MoodBuddy */,
-				93C7B0571AA2E3CC00498F97 /* MoodBuddyTests */,
+				93C7B0411AA2E3CC00498F97 /* ThoughtJar */,
+				93C7B0571AA2E3CC00498F97 /* ThoughtJarTests */,
 				93C7B0401AA2E3CC00498F97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,13 +122,13 @@
 		93C7B0401AA2E3CC00498F97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93C7B03F1AA2E3CC00498F97 /* MoodBuddy.app */,
-				93C7B0541AA2E3CC00498F97 /* MoodBuddyTests.xctest */,
+				93C7B03F1AA2E3CC00498F97 /* ThoughtJar.app */,
+				93C7B0541AA2E3CC00498F97 /* ThoughtJarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93C7B0411AA2E3CC00498F97 /* MoodBuddy */ = {
+		93C7B0411AA2E3CC00498F97 /* ThoughtJar */ = {
 			isa = PBXGroup;
 			children = (
 				93C7B0641AA2E5F900498F97 /* SuggestionsViewController.swift */,
@@ -138,6 +140,7 @@
 				93C7B04D1AA2E3CC00498F97 /* LaunchScreen.xib */,
 				93C7B0421AA2E3CC00498F97 /* Supporting Files */,
 			);
+			name = ThoughtJar;
 			path = MoodBuddy;
 			sourceTree = "<group>";
 		};
@@ -146,9 +149,10 @@
 			children = (
 				93C7B0441AA2E3CC00498F97 /* AppDelegate.swift */,
 				939E83161AA6D0D100B0B846 /* suggestionsbg.png */,
+				935280C71AA9027A00645457 /* splash@2x.png */,
 				939E83221AA6DBDB00B0B846 /* Calendar.png */,
+				935280C91AA9074D00645457 /* AppIcon@2x.png */,
 				939E82E91AA6B42C00B0B846 /* call.png */,
-				937347E51AA6E723009704C0 /* splash.jpg */,
 				939E82EA1AA6B42C00B0B846 /* checkin.png */,
 				93A043461AA81BB1004A4BB8 /* TrackingBG.png */,
 				93D4C9DD1AA817E900523FAE /* checkinafter.png */,
@@ -173,12 +177,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		93C7B0571AA2E3CC00498F97 /* MoodBuddyTests */ = {
+		93C7B0571AA2E3CC00498F97 /* ThoughtJarTests */ = {
 			isa = PBXGroup;
 			children = (
 				93C7B05A1AA2E3CC00498F97 /* MoodBuddyTests.swift */,
 				93C7B0581AA2E3CC00498F97 /* Supporting Files */,
 			);
+			name = ThoughtJarTests;
 			path = MoodBuddyTests;
 			sourceTree = "<group>";
 		};
@@ -193,9 +198,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93C7B03E1AA2E3CC00498F97 /* MoodBuddy */ = {
+		93C7B03E1AA2E3CC00498F97 /* ThoughtJar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93C7B05E1AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "MoodBuddy" */;
+			buildConfigurationList = 93C7B05E1AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "ThoughtJar" */;
 			buildPhases = (
 				93C7B03B1AA2E3CC00498F97 /* Sources */,
 				93C7B03C1AA2E3CC00498F97 /* Frameworks */,
@@ -205,14 +210,14 @@
 			);
 			dependencies = (
 			);
-			name = MoodBuddy;
+			name = ThoughtJar;
 			productName = MoodBuddy;
-			productReference = 93C7B03F1AA2E3CC00498F97 /* MoodBuddy.app */;
+			productReference = 93C7B03F1AA2E3CC00498F97 /* ThoughtJar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93C7B0531AA2E3CC00498F97 /* MoodBuddyTests */ = {
+		93C7B0531AA2E3CC00498F97 /* ThoughtJarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93C7B0611AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "MoodBuddyTests" */;
+			buildConfigurationList = 93C7B0611AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "ThoughtJarTests" */;
 			buildPhases = (
 				93C7B0501AA2E3CC00498F97 /* Sources */,
 				93C7B0511AA2E3CC00498F97 /* Frameworks */,
@@ -223,9 +228,9 @@
 			dependencies = (
 				93C7B0561AA2E3CC00498F97 /* PBXTargetDependency */,
 			);
-			name = MoodBuddyTests;
+			name = ThoughtJarTests;
 			productName = MoodBuddyTests;
-			productReference = 93C7B0541AA2E3CC00498F97 /* MoodBuddyTests.xctest */;
+			productReference = 93C7B0541AA2E3CC00498F97 /* ThoughtJarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93C7B03A1AA2E3CC00498F97 /* Build configuration list for PBXProject "MoodBuddy" */;
+			buildConfigurationList = 93C7B03A1AA2E3CC00498F97 /* Build configuration list for PBXProject "ThoughtJar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -259,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93C7B03E1AA2E3CC00498F97 /* MoodBuddy */,
-				93C7B0531AA2E3CC00498F97 /* MoodBuddyTests */,
+				93C7B03E1AA2E3CC00498F97 /* ThoughtJar */,
+				93C7B0531AA2E3CC00498F97 /* ThoughtJarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,16 +276,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				939E83011AA6B4F800B0B846 /* textbox3.png in Resources */,
+				935280C81AA9027A00645457 /* splash@2x.png in Resources */,
 				939E831A1AA6D46000B0B846 /* suggestion1.png in Resources */,
 				93D4C9DF1AA817E900523FAE /* checkinafter.png in Resources */,
 				93D4C9D01AA806BB00523FAE /* suggestion2.png in Resources */,
 				939E82F61AA6B42C00B0B846 /* pano2.jpg in Resources */,
 				939E83001AA6B4F800B0B846 /* textbox2.png in Resources */,
+				935280CA1AA9074D00645457 /* AppIcon@2x.png in Resources */,
 				939E82F51AA6B42C00B0B846 /* cross.png in Resources */,
 				939E831F1AA6DBA600B0B846 /* Map Marker.png in Resources */,
 				939E83231AA6DBDB00B0B846 /* Calendar.png in Resources */,
 				93D4C9E01AA817E900523FAE /* checkinbefore.png in Resources */,
-				937347E61AA6E723009704C0 /* splash.jpg in Resources */,
 				93C7B04A1AA2E3CC00498F97 /* Main.storyboard in Resources */,
 				939E82F31AA6B42C00B0B846 /* call.png in Resources */,
 				93D4C9D11AA806BB00523FAE /* suggestion3.png in Resources */,
@@ -334,7 +340,7 @@
 /* Begin PBXTargetDependency section */
 		93C7B0561AA2E3CC00498F97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93C7B03E1AA2E3CC00498F97 /* MoodBuddy */;
+			target = 93C7B03E1AA2E3CC00498F97 /* ThoughtJar */;
 			targetProxy = 93C7B0551AA2E3CC00498F97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -443,7 +449,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MoodBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ThoughtJar;
 			};
 			name = Debug;
 		};
@@ -454,7 +460,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MoodBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ThoughtJar;
 			};
 			name = Release;
 		};
@@ -472,8 +478,8 @@
 				);
 				INFOPLIST_FILE = MoodBuddyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodBuddy.app/MoodBuddy";
+				PRODUCT_NAME = ThoughtJarTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThoughtJar.app/ThoughtJar";
 			};
 			name = Debug;
 		};
@@ -487,15 +493,15 @@
 				);
 				INFOPLIST_FILE = MoodBuddyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodBuddy.app/MoodBuddy";
+				PRODUCT_NAME = ThoughtJarTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThoughtJar.app/ThoughtJar";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93C7B03A1AA2E3CC00498F97 /* Build configuration list for PBXProject "MoodBuddy" */ = {
+		93C7B03A1AA2E3CC00498F97 /* Build configuration list for PBXProject "ThoughtJar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93C7B05C1AA2E3CC00498F97 /* Debug */,
@@ -504,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93C7B05E1AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "MoodBuddy" */ = {
+		93C7B05E1AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "ThoughtJar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93C7B05F1AA2E3CC00498F97 /* Debug */,
@@ -513,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93C7B0611AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "MoodBuddyTests" */ = {
+		93C7B0611AA2E3CC00498F97 /* Build configuration list for PBXNativeTarget "ThoughtJarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93C7B0621AA2E3CC00498F97 /* Debug */,

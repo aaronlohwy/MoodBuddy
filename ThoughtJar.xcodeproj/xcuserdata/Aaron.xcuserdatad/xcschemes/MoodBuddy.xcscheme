@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93C7B03E1AA2E3CC00498F97"
-               BuildableName = "MoodBuddy.app"
-               BlueprintName = "MoodBuddy"
-               ReferencedContainer = "container:MoodBuddy.xcodeproj">
+               BuildableName = "ThoughtJar.app"
+               BlueprintName = "ThoughtJar"
+               ReferencedContainer = "container:ThoughtJar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93C7B0531AA2E3CC00498F97"
-               BuildableName = "MoodBuddyTests.xctest"
-               BlueprintName = "MoodBuddyTests"
-               ReferencedContainer = "container:MoodBuddy.xcodeproj">
+               BuildableName = "ThoughtJarTests.xctest"
+               BlueprintName = "ThoughtJarTests"
+               ReferencedContainer = "container:ThoughtJar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "93C7B0531AA2E3CC00498F97"
-               BuildableName = "MoodBuddyTests.xctest"
-               BlueprintName = "MoodBuddyTests"
-               ReferencedContainer = "container:MoodBuddy.xcodeproj">
+               BuildableName = "ThoughtJarTests.xctest"
+               BlueprintName = "ThoughtJarTests"
+               ReferencedContainer = "container:ThoughtJar.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93C7B03E1AA2E3CC00498F97"
-            BuildableName = "MoodBuddy.app"
-            BlueprintName = "MoodBuddy"
-            ReferencedContainer = "container:MoodBuddy.xcodeproj">
+            BuildableName = "ThoughtJar.app"
+            BlueprintName = "ThoughtJar"
+            ReferencedContainer = "container:ThoughtJar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93C7B03E1AA2E3CC00498F97"
-            BuildableName = "MoodBuddy.app"
-            BlueprintName = "MoodBuddy"
-            ReferencedContainer = "container:MoodBuddy.xcodeproj">
+            BuildableName = "ThoughtJar.app"
+            BlueprintName = "ThoughtJar"
+            ReferencedContainer = "container:ThoughtJar.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "93C7B03E1AA2E3CC00498F97"
-            BuildableName = "MoodBuddy.app"
-            BlueprintName = "MoodBuddy"
-            ReferencedContainer = "container:MoodBuddy.xcodeproj">
+            BuildableName = "ThoughtJar.app"
+            BlueprintName = "ThoughtJar"
+            ReferencedContainer = "container:ThoughtJar.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

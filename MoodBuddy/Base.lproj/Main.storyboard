@@ -29,7 +29,7 @@
         <!--Track-->
         <scene sceneID="fdM-7I-VBf">
             <objects>
-                <viewController id="hzg-Xn-yr2" customClass="GraphViewController" customModule="MoodBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hzg-Xn-yr2" customClass="GraphViewController" customModule="ThoughtJar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nfz-f6-qbX"/>
                         <viewControllerLayoutGuide type="bottom" id="AXS-49-s6K"/>
@@ -195,7 +195,7 @@
         <!--Check-In-->
         <scene sceneID="eez-7K-zeC">
             <objects>
-                <viewController id="gpO-Nd-iIp" customClass="CheckInViewController" customModule="MoodBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gpO-Nd-iIp" customClass="CheckInViewController" customModule="ThoughtJar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GHY-ce-NBG"/>
                         <viewControllerLayoutGuide type="bottom" id="MmY-56-mcz"/>
@@ -219,6 +219,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-0d-FBT">
                                 <rect key="frame" x="16" y="481" width="244" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -269,7 +270,7 @@
         <!--Suggestions-->
         <scene sceneID="jYN-JX-5Dm">
             <objects>
-                <viewController id="m5u-gz-6Op" customClass="SuggestionsViewController" customModule="MoodBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m5u-gz-6Op" customClass="SuggestionsViewController" customModule="ThoughtJar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JCa-hD-dt5"/>
                         <viewControllerLayoutGuide type="bottom" id="E1i-3e-L63"/>
@@ -281,7 +282,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suggestionsbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="C1B-CY-rPN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-QA-iw9" customClass="ScrollViewContainer" customModule="MoodBuddy" customModuleProvider="target">
+                            <view opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbZ-QA-iw9" customClass="ScrollViewContainer" customModule="ThoughtJar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doc-BW-PwV">
